@@ -39,7 +39,7 @@ class Giocatore(MembroSquadra):
     
 class Allenatore(MembroSquadra):
     def __init__(self, nome, eta, anni_di_exp):
-        super().__init__(nome, eta)
+        super().__init__(nome, eta)  
         self.anni_di_exp = anni_di_exp
         
         # metodi dirigi allenamneto e la sua desc
@@ -62,7 +62,7 @@ class Assistente(MembroSquadra):
 
 
 
-# istanze delle classi -> 
+# istanze delle classi
 giocatore = Giocatore("Lionel messi", 37, "attaccante", 10)
 giocatore = Giocatore("romelu lukaku", 31, "attacante", 9)
 allenatore = Allenatore("Carlo ancelotti", 65, 20)

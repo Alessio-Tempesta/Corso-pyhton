@@ -45,7 +45,7 @@ class Pinguino(Animale):
         return "Garrito!"
     
     def nuota(self):
-        return f"Il pinguino {self.nome} sta nuotando nell'acqaua in antartide."
+        return f"Il pinguino {self.nome} sta nuotando nell'acqua in antartide."
 
 # creazione degli oggetti
 leone = Leone("Simba", 10, "Maschio")
