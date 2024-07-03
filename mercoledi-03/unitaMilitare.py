@@ -46,15 +46,15 @@ class UnitàMilitare:
         
     # Metodo per il movimento dell'unità
     def muovi(self):
-        print(f"L'unità {self.nome} si sta muovendo.")
+        print(f"L'unità {self.nome} si sta muovendo.......")
         
     # Metodo per l'attacco dell'unità
     def attacca(self):
-        print(f"L'unità {self.nome} sta iniziando l'attacco.")
+        print(f"L'unità {self.nome} sta iniziando l'attacco.....")
             
     # Metodo per la ritirata dell'unità
     def ritira(self):
-        print(f"L'unità {self.nome} si sta ritirando.")
+        print(f"L'unità {self.nome} si sta ritirando......")
 
 
 # 2- Creazione delle classi derivate
@@ -82,7 +82,7 @@ class SupportoLogistico(UnitàMilitare):
 class Ricognizione(UnitàMilitare):
     # Metodoper la ricognzione
     def conduci_ricognizione(self):
-        print(f"L'unità di ricognizione {self.nome} sta conducendo una missione di sorveglianza")
+        print(f"L'unità di ricognizione {self.nome} è in ricognizione nel bosco o foresta")
 
 
 # Classe ControlloMilitare che eredita tutte le classi precedenti:
@@ -109,25 +109,27 @@ class ControlloMilitare(Fanteria, Artiglieria, Cavalleria, SupportoLogistico, Ri
                 unita_non_trovata = False  # se l'unita è stata trovata 
                 print(f"Dettagli dell'unità {nome}:")
                 print(f"Numero di soldati: {unita.numero_soldati}")
-                unita.muovi()  # Chiama il metodo muovi() dell'unità
-                unita.attacca()  # Chiam il metodo attacca() dell'unità
-                unita.ritira()  # Chiama il metodo ritira() dell'unità
+                unita.muovi()    # Chiama il metodo muovi() dell'unità
+                unita.attacca()    # Chiam il metodo attacca() dell'unità
+                unita.ritira()    # Chiama il metodo ritira() dell'unità
                 break
         
         if unita_non_trovata:
             print(f"Unità {nome} non trovata nel registro.")  # Mex se l'unità non è trovata nel registro
 
 
-# Test dell'istanza ControlloMilitare
+# Test-istanza Controllo Militare
 
 controllo_militare = ControlloMilitare()
 
 # Registrazione di alcune unità di diversi tipi
 controllo_militare.registra_unita(Fanteria("Fante squadra Alpha", 100))
+controllo_militare.registra_unita(Fanteria("Fante squadra Beta", 100))
 controllo_militare.registra_unita(Artiglieria("Artiglieria Delta00", 1000))
 controllo_militare.registra_unita(SupportoLogistico("Supporto Fieramosca", 50))
 controllo_militare.registra_unita(Cavalleria("Cavalleria 021", 60))
 controllo_militare.registra_unita(Ricognizione("Squadra di Ricognizione", 20))
+
 
 # Mostra le unità registrate
 controllo_militare.mostra_unità()
