@@ -17,8 +17,9 @@
 #             esplora_terreno() : esplora l'area per raccolgiere informazioni sul nemico.
 #         SupportoLogistico:
 #         rifornisci_unità() gestisce il rifornimento e la manutenzione.
-#         Ricongnizione:
-#         conduci_ricognizone() conduce missioni di sorveglianza.
+
+#     Ricongnizione:
+#       conduci_ricognizone() conduce missioni di sorveglianza.
 # 3 classe ControlloMilitare:
 # eredita da tutte le classi precedenti.
 # attributi aggiuntivi:
@@ -79,7 +80,7 @@ class SupportoLogistico(UnitàMilitare):
         print(f"L'unità di supporto logistico {self.nome} sta facendo rifornimento e manutenzione")
 
 class Ricognizione(UnitàMilitare):
-    # Metodo specifico per la ricognzione
+    # Metodoper la ricognzione
     def conduci_ricognizione(self):
         print(f"L'unità di ricognizione {self.nome} sta conducendo una missione di sorveglianza")
 
@@ -119,7 +120,6 @@ class ControlloMilitare(Fanteria, Artiglieria, Cavalleria, SupportoLogistico, Ri
 
 # Test dell'istanza ControlloMilitare
 
-# Creiamo un'istanza di ControlloMilitare
 controllo_militare = ControlloMilitare()
 
 # Registrazione di alcune unità di diversi tipi
