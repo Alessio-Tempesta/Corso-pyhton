@@ -63,43 +63,43 @@
 # esercizio 1 (Facile): Scrivi una funzione chiamata area_triangolo che prenda in input la base e l'altezza di un triangolo e restituisca la sua area. fare la stessa cosa con quadrato e rettagolo e rendere ripetibile salvando in una lista tutti i risultati
 
 # funzione per trovare area triangolo
-def area_triangolo(base, altezza):
-    area = 0.5 * base * altezza
-    return area
+# def area_triangolo(base, altezza):
+#     area = 0.5 * base * altezza
+#     return area
 
-# funzione per trovare area quadrato
-def area_quadrato(lato):
-    area = lato * lato
-    return area
+# # funzione per trovare area quadrato
+# def area_quadrato(lato):
+#     area = lato * lato
+#     return area
 
-# funzione per trovare area rettangolo
-def area_rettangolo(base, altezza):
-    area = base * altezza
-    return area
+# # funzione per trovare area rettangolo
+# def area_rettangolo(base, altezza):
+#     area = base * altezza
+#     return area
 
-def calcola_aree():
+# def calcola_aree():
     
-    aree = []
+#     aree = []
 
- # Input per il triangolo
-    base_triangolo = float(input("Inserisci la base del triangolo: "))
-    altezza_triangolo = float(input("Inserisci l'altezza del triangolo: "))
-    area_tri = area_triangolo(base_triangolo, altezza_triangolo)
-    aree.append(area_tri)
+#  # Input per il triangolo
+#     base_triangolo = float(input("Inserisci la base del triangolo: "))
+#     altezza_triangolo = float(input("Inserisci l'altezza del triangolo: "))
+#     area_tri = area_triangolo(base_triangolo, altezza_triangolo)
+#     aree.append(area_tri)
     
-    # Input per il quadrato
-    lato_quadrato = float(input("Inserisci il lato del quadrato: "))
-    area_quad = area_quadrato(lato_quadrato)
-    aree.append(area_quad)
+#     # Input per il quadrato
+#     lato_quadrato = float(input("Inserisci il lato del quadrato: "))
+#     area_quad = area_quadrato(lato_quadrato)
+#     aree.append(area_quad)
     
-    # Input per il rettangolo
-    base_rettangolo = float(input("Inserisci la base del rettangolo: "))
-    altezza_rettangolo = float(input("Inserisci l'altezza del rettangolo: "))
-    area_ret = area_rettangolo(base_rettangolo, altezza_rettangolo)
-    aree.append(area_ret)
+#     # Input per il rettangolo
+#     base_rettangolo = float(input("Inserisci la base del rettangolo: "))
+#     altezza_rettangolo = float(input("Inserisci l'altezza del rettangolo: "))
+#     area_ret = area_rettangolo(base_rettangolo, altezza_rettangolo)
+#     aree.append(area_ret)
     
-    return aree
+#     return aree
 
-# Eseguire la funzione per calcolare le aree
-lista_aree = calcola_aree()
-print("Lista delle aree calcolate:", lista_aree)
+# # Eseguire la funzione per calcolare le aree
+# lista_aree = calcola_aree()
+# print("Lista delle aree calcolate:", lista_aree)

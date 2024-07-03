@@ -121,6 +121,10 @@
 #     istogramma = "*" * numero
 #     print(istogramma)
 
+
+
+
+
 # Scrivete un programma che chiede una stringa all’utente e
 # restituisce un dizionario rappresentante la "frequenza di
 # comparsa" di ciascun carattere componente la stringa.
@@ -131,22 +135,142 @@
 
 
 
+# string_utente = input("inserisci una stringa: ")
+
+# # diuzionario vuoto per memorizzare la frequenza dei caratteri
+# freq_caratteri = {}
+
+# # iteriamo attraverso ogni caratteerer nella stringa 
+# for carattere in string_utente:
+#     # se è presnete nel dizionario, incrementiamo il suo conteggio
+#     if carattere in freq_caratteri:
+#         freq_caratteri[carattere] += 1
+#         # aggiunta del carattere al dizionario con conteggio iniziale di 1 
+#     else:
+#         freq_caratteri[carattere] = 1
+
+#         #stampa del dizionario
+#     print("Frequenza dei caratteri nella stringa:")
+#     print(freq_caratteri)
 
 
-string_utente = input("inserisci una stringa: ")
+# Scrivete un programma che chiede un numero all’utente e
+# restituisce un dizionario con il quadrato del numero, se è pari o
+# dispari e quante cifre contiene.
+# Esempio:
+# Numero 12
+# Risultato {‘quadrato’: 144,’pari o dispari’:’pari’, ‘n. cifre’: 2 }
 
-# diuzionario vuoto per memorizzare la frequenza dei caratteri
-freq_caratteri = {}
 
-# iteriamo attraverso ogni caratteerer nella stringa 
-for carattere in string_utente:
-    # se è presnete nel dizionario, incrementiamo il suo conteggio
-    if carattere in freq_caratteri:
-        freq_caratteri[carattere] += 1
-        # aggiunta del carattere al dizionario con conteggio iniziale di 1 
-    else:
-        freq_caratteri[carattere] = 1
+# numero = int(input("Inserisci un numero :"))
 
-        #stampa del dizionario
-    print("Frequenza dei caratteri nella stringa:")
-    print(freq_caratteri)
+# # calcolo il quadrato del numero
+# quadrato = numero ** 2
+
+# # Capiamo se è pari o dispari
+# if numero % 2 == 0:
+#     pari_dispari = 'pari'
+# else:
+#     pari_dispari = 'dispari'
+
+# #Determininamo il numero di cifre del numero convertednolo in stringa e misruandone la lunghezz
+# n_cifre = len(str(numero))
+
+# risultato = {
+#         'quadrato': quadrato,
+#         'pari o dispari': pari_dispari,
+#         'n.di cifre': n_cifre
+#     }
+
+# print("Risultato: ")
+# print(risultato)
+
+
+# Scrivete un programma che prenda i nomi degli alunni di una
+# classe e i loro voti, quando l’utente scrive media il programma
+# andrà a stampare i nomi di tutti gli alunni e per ogni alunno la
+# media dei voti.
+# Esempio:
+# Nome: Giovanni , Media: 7.5
+# Nome: Alfredo , Media: 9
+# Nome: Michela, Media 10
+
+
+# Inizialiazzaione dizionario nomi e voti alunni
+# alunni = {}
+
+# # ciclo while per raccoligeir i dati alunni
+# while True:
+#     nome = input("inserisci il nome dell'alunno oppure la media per calcolo medie:")
+#     if nome.lower() == 'media':
+#         break
+
+#     # chiediamo i voti separati dagli spazi
+#     voti =input(f"Inserisci i voti di {nome} separati da spazi: ")
+#     lista_di_voti = list(map(float, voti.split()))
+
+#     # voti alunni nel dizionario
+#     alunni[nome] = lista_di_voti
+
+#     print("\nMedie dei voti degli alunni:")
+#     for nome, voti in alunni.items():
+#         media_voti = sum(voti) / len(voti)
+#         print(f"Nome: { nome }, Media: {media_voti:.2f}")
+
+#     print("il programma è terminato ")
+
+
+
+
+# Scrivete un programma che utilizza una funzione che accetta
+# """come parametro una stringa passata dall’utente e restituisce in
+# risposta se è palindroma o no.
+# Esempio:‘I topi non avevano nipoti’ è palindroma‘Ai rimpianti rimediamo Maria’ è palindroma
+# ‘Ciao’ non è palindroma"""
+
+# def palindromo(stringa):
+#     # funzione verifica se una stringa è palindroma.Restituisce True se la stringa è palindroma, altrimenti False.
+#     stringa_senza_spazi = ''.join(stringa.split()).lower()
+    
+#     # Invertiamo la stringa
+#     inverti_stringa = stringa_senza_spazi[::-1]
+    
+#     #  se la stringa originale è uguale alla sua versione invertita
+#     return stringa_senza_spazi == inverti_stringa
+
+# stringa_user = input("Inserisci una frase: ")
+
+# # se la stringa inserita dall'uteente è palindroma
+# if palindromo(stringa_user):
+#     print(f"'{stringa_user}' è palindroma.")
+# else:
+#     print(f"'{stringa_user}' non è palindroma.")
+
+
+# def palindroma(parola):
+#     # Calcoliamo l'indice dell'ultimo carattere nella parola
+#     indice = (len(parola) -1)
+#     nuova_parola = ""
+
+#     # Costruiamo una nuova parola invertendo la parola originale
+#     while indice >= 0:
+#         nuova_parola += parola[indice]
+#         indice -= 1 
+
+#     #  Dopo aver costruito la nuova parola invertita, controlliamo se è uguale alla parola originale
+#     if nuova_parola == parola:
+#         print(nuova_parola + " : la parola è un palindromo")
+#     else:
+#         print(nuova_parola + ": la parola non è un palindormo")
+
+# parola1 = "radar"
+# parola2 = "i topi non avevano nipoti"
+# parola3 = "ciao"
+
+# palindroma(parola2)
+# palindroma(parola1)
+# palindroma(parola3)
+
+
+
+
