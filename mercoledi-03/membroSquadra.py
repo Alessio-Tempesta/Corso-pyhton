@@ -1,8 +1,16 @@
 # creare una classe base membroSqaudra e diverse classi figlie che rappresentano roli specifici all'interno della squadra di calcio,com Giocatore, Allenatore e assistente. 
 # l'esrcizio consente di esploarare come differenti membri della squadra possono erediatare attributi comuni dalla classe base, ma anche come possono differire nei loro comportamenti e responsabiltà.abs
 # classe MembroSquadra
-# Attributi: nome (stringa), eta(int), metodi : descrivi  
-
+# Attributi: nome (stringa), eta(int), metodi : descrivi() (stampa una descrizione generlae del membro della squadra)
+# Classi derivate :
+# Giocaotre :
+#  attributi aggiuntivi come ruole (e.g , attacante, difensore) n.maglia
+# metodi come gioca_partita() che possono includere azuioni specifiche del giocatore
+# Allenatore: 
+# attributi aggiuntivi come anni di ex
+# metodi come dirige_allenamento() che dettagliano l'allenatore conduce gli allenamenti
+# Assistente: Attributi aggiuntuivi come specilazziazione (fisoterapista, analsita di gicoo)
+# metodi specifici del ruolo, coem supporta team() che può descrviere varie forme di supp. al team
 
 
 # creazione Membrosqaudra classe padre
