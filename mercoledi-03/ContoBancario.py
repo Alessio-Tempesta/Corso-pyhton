@@ -21,7 +21,9 @@ class ContoBancario:
         self.__saldo = saldo_iniziale 
         
     def deposita(self, importo):
+        # se l'importo da depositare è positvio 
         if importo > 0:
+            # aggiunge l'importo da depositaree al slado
             self.__saldo += importo
             print(f"deposito di {importo} effettuato. il nuovo saldo :{self.__saldo} ")
         else:
@@ -33,10 +35,12 @@ class ContoBancario:
                 self.__saldo -= importo
                 print(f"Prelievo di {importo} effetuato, il nuovo saldo è: {self.__saldo}")
             else:
-                print("fondi non sufficenti per effe il prelievo ")
+                print("fondi non sufficenti per effettuare il prelievo ")
         else:
-            print("l'importo del èrelievo deve positivo")
+            print("l'importo del prelievo deve  essere positivo")
             
+            
+            # metodo che restituisce il saldo
     def visualizza_saldo(self):
         return self.__saldo
     
@@ -44,6 +48,6 @@ class ContoBancario:
 conto_alessio = ContoBancario("Alessio Tempesta", 1500)
 print(f"Il titolare del conto :{conto_alessio._ContoBancario__titolare}" )
 print(f"Saldo Conto :{conto_alessio.visualizza_saldo()}" )
-conto_alessio.deposita(500)
+conto_alessio.deposita(1000)
 conto_alessio.preleva(200)
 
