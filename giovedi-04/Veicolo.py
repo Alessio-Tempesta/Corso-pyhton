@@ -113,18 +113,20 @@ class GestoreParcoVeicoli:
         else:
             print("Quetsa è la lista dei vecioli nel parco:")
             for veicolo in self._veicoli:
-                print(f" LA marca del veicolo ècls : {veicolo._marca} e {veicolo._modello}")
+                print(f" LA marca del veicolo è : {veicolo._marca} e {veicolo._modello}")
     
 
 # test generali 
 gestore = GestoreParcoVeicoli()
 
 auto1 = Auto("Fiat", "500", 2020, 3)
+auto2 = Auto("Porsche ", "Panamera", 2022, 5)
 furgone1 = Furgone("Iveco", "Daily", 2019, 2000)
 motocicletta1 = Motocicletta("Ducati", "Monster", 2021, "sportiva")
 
 # Aggiunta dei veicoli al parco veicoli
 gestore.aggiungi_veicolo(auto1)
+gestore.aggiungi_veicolo(auto2)
 gestore.aggiungi_veicolo(furgone1)
 gestore.aggiungi_veicolo(motocicletta1)
 
