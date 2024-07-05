@@ -46,8 +46,6 @@
 # conto.preleva(200)
 
 
-
-
 # Polimorifsimo : il polimorfismo permette ad oggeti di classi diverse di rispondere allo stesso metodo consentendo il trattamneto uniforme di oggetti di diverse classi.
 
 # # classe base:
