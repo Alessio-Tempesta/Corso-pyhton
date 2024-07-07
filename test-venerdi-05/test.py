@@ -27,7 +27,6 @@
 # class ContoBancario:
 #     def __init__(self, saldo_iniziale):
 #         self.__saldo = saldo_iniziale #come attriubtuo privato
-        
 #     def deposita(self,importo):
 #         if importo >0 :
 #             self.__saldo += importo
