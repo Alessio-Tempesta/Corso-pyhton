@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<libri>
+    <libro>
+        <titolo>Python Cookbook</titolo>
+        <autore>David Beazley</autore>
+    </libro>
+    <libro>
+        <titolo>Fluent Python</titolo>
+        <autore>Luciano Ramalho</autore>
+    </libro>
+<Libro><titolo>java</titolo><autore>java</autore></Libro></libri>

@@ -1,8 +1,3 @@
-# Create con l'oop un pokedex e 4 pokemon, bulbasaur, charmender,
-# # squirtle e Pikachu, le caratteristiche dei pokemon sono mosse, punti vita, tipo
-# 1) All'avvio vi fa scegliere uno dei pokemon possibili e lo aggiunge al pokedex;
-# 2) Il gioco va avanti con voi che cercate i pokemon, quando trovate un pokemon vedete il suo livello e razza e decidete se combattere;
-# 3) se combattete potete catturarlo solo se gli azzerate i punti vita, altrimenti scappa!
 import random
 
 class Pokemon:
@@ -119,4 +114,3 @@ while True:
     elif scelta_da_fare == "esci":
         print("Grazie per aver giocato!")
         break
-
