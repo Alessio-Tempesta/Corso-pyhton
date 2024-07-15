@@ -1,0 +1,79 @@
+{
+    "439": {
+        "id": 439,
+        "nome": "mime-jr",
+        "abilita": [
+            "soundproof",
+            "filter",
+            "technician"
+        ],
+        "exp": 62,
+        "altezza": 6,
+        "peso": 130
+    },
+    "993": {
+        "id": 993,
+        "nome": "iron-jugulis",
+        "abilita": [
+            "quark-drive",
+            "quark-drive"
+        ],
+        "exp": 285,
+        "altezza": 13,
+        "peso": 1110
+    },
+    "130": {
+        "id": 130,
+        "nome": "gyarados",
+        "abilita": [
+            "intimidate",
+            "moxie"
+        ],
+        "exp": 189,
+        "altezza": 65,
+        "peso": 2350
+    },
+    "967": {
+        "id": 967,
+        "nome": "cyclizar",
+        "abilita": [
+            "shed-skin",
+            "regenerator"
+        ],
+        "exp": 175,
+        "altezza": 16,
+        "peso": 630
+    },
+    "394": {
+        "id": 394,
+        "nome": "prinplup",
+        "abilita": [
+            "torrent",
+            "competitive"
+        ],
+        "exp": 142,
+        "altezza": 8,
+        "peso": 230
+    },
+    "753": {
+        "ID": 753,
+        "Nome": "fomantis",
+        "Abilità": [
+            "leaf-guard",
+            "contrary"
+        ],
+        "Exp": 50,
+        "Altezza": 3,
+        "Peso": 15
+    },
+    "898": {
+        "ID": 898,
+        "Nome": "calyrex",
+        "Abilità": [
+            "unnerve"
+        ],
+        "Exp": 250,
+        "Altezza": 11,
+        "Peso": 77
+    }
+}
