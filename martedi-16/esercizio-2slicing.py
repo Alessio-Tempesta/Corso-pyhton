@@ -23,7 +23,7 @@ sotto_matrice = matrice[1:5, 1:5]
 print("\n la sotto matrice centrale 4x4: ", sotto_matrice)
 
 #3- Inverti le righe della matrice estratta (cioè, la prima riga diventa l'ultima, la seconda diventa la penultima, e così via).
-inverti_sotto_matrice = sotto_matrice[::-1, :]
+inverti_sotto_matrice = np.flipud(sotto_matrice)
 print("\ninversione sotto matrice", inverti_sotto_matrice)
 
 #4- Estrai la diagonale principale della matrice invertita e crea un array 1D contenente questi elementi.
