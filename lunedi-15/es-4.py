@@ -5,7 +5,6 @@ import numpy as np
 arr = np.random.randint(10, 51, 20)
 print(f"array originale",arr)
 
-
 # 2- Utilizza lo slicing per estrarre i primi 10 elementi dell'array.
 # estrai i primi 10 ele dell'array
 
