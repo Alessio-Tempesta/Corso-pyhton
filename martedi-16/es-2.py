@@ -11,6 +11,7 @@
 
 import numpy as np
 
+# funzione con il linspace 
 def array_linspace():
     try:
         # Creazione di un array di 50 numeri equidistanti tra 0 e 10
@@ -18,7 +19,8 @@ def array_linspace():
     except Exception as e:
         print(f"Errore nella generazione dell'array con linspace: {e}")
         return None
-
+    
+# funzione di array random
 def array_random():
     try:
         # Creazione di un array di 50 numeri casuali tra 0 e 1
