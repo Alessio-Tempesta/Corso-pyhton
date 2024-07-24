@@ -40,7 +40,7 @@ def verifica_login(driver):
         EC.presence_of_element_located((By.XPATH, "//h1[contains(text(), 'Logged In Successfully')]"))
     )
     return success_message is not None
-
+# 
 driver = setup_driver()
 username = 'student'
 password = "Password123"
