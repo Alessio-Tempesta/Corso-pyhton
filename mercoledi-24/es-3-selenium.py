@@ -10,6 +10,7 @@ def setup_driver():
     driver = webdriver.Chrome()
     return driver
 
+# creazioen funzione estrai tabella dati
 def estrai_tabella_dati(driver):
     
     driver.get("https://www.w3schools.com/html/html_tables.asp")         #visita la pagina con la tabella
